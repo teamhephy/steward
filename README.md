@@ -1,8 +1,3 @@
-# Steward
-
-This repository contains the original Deis-built Proof of Concept for a Kubernetes-native Service Broker.
-Given broad interest in the Service Catalog space, Deis has joined forces with Google, Red Hat, IBM and others, under the [Service Catalog special interest group](https://github.com/kubernetes-incubator/service-catalog).
-
 Ongoing development is now happening in the [service-catalog](https://github.com/kubernetes-incubator/service-catalog) repository. 
 
 The original concepts which informed Deis' upstream involvement live in [README-OLD.md](./README-OLD.md).
