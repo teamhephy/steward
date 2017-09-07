@@ -53,7 +53,7 @@ service_plan:
 
 # `ServicePlanClaim`
 
-This object is submitted by the application as JSON in a [`ConfigMap`][configMap] (to become a [`ThirdPartyResource`][3pr] after https://github.com/deis/steward/issues/17 is fixed) when the application wants Steward to create a new service for its use. Steward then mutates the object to communicate the status of the service creation operation. Applications may watch the event stream for this object to watch progress of service creation.
+This object is submitted by the application as JSON in a [`ConfigMap`][configMap] (to become a [`ThirdPartyResource`][3pr] after https://github.com/deisthree/steward/issues/17 is fixed) when the application wants Steward to create a new service for its use. Steward then mutates the object to communicate the status of the service creation operation. Applications may watch the event stream for this object to watch progress of service creation.
 
 - `target-name` - the name of the [`ConfigMap`][configMap] that steward should write the resulting credentials
 - `target-namespace` - the namespace that steward should write the [`ConfigMap`][configMap] with the resulting credentials

@@ -20,8 +20,8 @@ If a PR is from a Steward collaborator, he or she should be the one to merge and
 
 ## Support Channels
 
-Whether you are a user or contributor we our main official support channel is via GitHub issues: https://github.com/deis/steward/issues.
+Whether you are a user or contributor we our main official support channel is via GitHub issues: https://github.com/deisthree/steward/issues.
 
-If you find an issue, request a new feature, or have a question, please [open an issue](https://github.com/deis/steward/issues/new).
+If you find an issue, request a new feature, or have a question, please [open an issue](https://github.com/deisthree/steward/issues/new).
 
 Before opening a new issue or submitting a new PR, it's helpful to search the project - it's likely that another user has already reported the issue you're facing, or it's a known issue that we're already aware of.

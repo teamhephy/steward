@@ -21,7 +21,7 @@ After you've successfully set up and run a Steward with this sample broker, we r
 
 ### Configuring and Running Steward
 
-Once a broker is up and running, configuring and starting Steward is fairly simple. See the [pre-built cf mode manifest](https://github.com/deis/steward/blob/master/manifests/steward-template-cf.yaml) that contains all the configuration necessary to run Steward. Simply change each config field in the `spec.template.spec.containers[0].env` field and run `kubectl create -f manifests/steward-template-cf.yaml` to install.
+Once a broker is up and running, configuring and starting Steward is fairly simple. See the [pre-built cf mode manifest](https://github.com/deisthree/steward/blob/master/manifests/steward-template-cf.yaml) that contains all the configuration necessary to run Steward. Simply change each config field in the `spec.template.spec.containers[0].env` field and run `kubectl create -f manifests/steward-template-cf.yaml` to install.
 
 See the [cf mode documentation][cf-mode] for more details.
 
@@ -75,7 +75,7 @@ A few extra notes:
 
 Now that a tiller server is running, we can configure Steward to talk to it.
 
-Once a broker is up and running, configuring and starting Steward is fairly simple. See the [pre-built helm mode manifest](https://github.com/deis/steward/blob/master/manifests/steward-template-helm.yaml) that contains all the configuration necessary to run Steward. Simply change each config field in the `spec.template.spec.containers[0].env` field and run the following to install:
+Once a broker is up and running, configuring and starting Steward is fairly simple. See the [pre-built helm mode manifest](https://github.com/deisthree/steward/blob/master/manifests/steward-template-helm.yaml) that contains all the configuration necessary to run Steward. Simply change each config field in the `spec.template.spec.containers[0].env` field and run the following to install:
 
 ```console
 kubectl create -f manifests/steward-template-helm.yaml
@@ -106,17 +106,17 @@ To run a demo in command mode, you need the following:
 
 ### Creating an Image that Adheres to the Command Mode Interface
 
-Before installing Steward, make sure you have an image that conforms to the [command mode interface](https://github.com/deis/steward/blob/master/doc/CMD_MODE.md#interface). One such image is located at `quay.io/deisci/cmd-postgres-broker:devel`. See https://github.com/deis/cmd-postgres-broker for more details.
+Before installing Steward, make sure you have an image that conforms to the [command mode interface](https://github.com/deisthree/steward/blob/master/doc/CMD_MODE.md#interface). One such image is located at `quay.io/deisci/cmd-postgres-broker:devel`. See https://github.com/deisthree/cmd-postgres-broker for more details.
 
 When claims are submitted, Steward will launch pods using this image, so ensure that your Kubernetes cluster can access it.
 
-See [the "Interface" section](https://github.com/deis/steward/blob/master/doc/CMD_MODE.md#interface) for more details on the command mode interface.
+See [the "Interface" section](https://github.com/deisthree/steward/blob/master/doc/CMD_MODE.md#interface) for more details on the command mode interface.
 
 ### Configuring and Running Steward
 
 Now that your image is ready, we can configure Steward in command mode to use it.
 
-First, see the [pre-built command mode manifest](https://github.com/deis/steward/blob/master/manifests/steward-template-cmd.yaml) that contains all the configuration necessary to run Steward in command mode. Simply change each config field in the `spec.template.spec.containers[0].env` field and run the following to install:
+First, see the [pre-built command mode manifest](https://github.com/deisthree/steward/blob/master/manifests/steward-template-cmd.yaml) that contains all the configuration necessary to run Steward in command mode. Simply change each config field in the `spec.template.spec.containers[0].env` field and run the following to install:
 
 ```console
 kubectl create -f manifests/steward-template-cmd.yaml
@@ -197,11 +197,11 @@ A few extra notes:
   - Call `kubectl edit configmap claim-1` three times to change the `action` field to `bind`, then `unbind`, then finally `deprovision`
   - Ensure that the appropriate resources are in the appropriate state after each action. For example, the appropriate command should be run to successful completion in command mode.
 
-[sample-broker-installation]: https://github.com/deis/cf-sample-broker#installing-the-sample-broker
-[sample-broker]: https://github.com/deis/cf-sample-broker
+[sample-broker-installation]: https://github.com/deisthree/cf-sample-broker#installing-the-sample-broker
+[sample-broker]: https://github.com/deisthree/cf-sample-broker
 [cfbrokerapi]: https://docs.Cloud Foundry.org/services/api.html
 [helm-init]: https://github.com/kubernetes/helm/blob/master/docs/quickstart.md#initialize-helm-and-install-tiller
 [chart-repo]: https://github.com/kubernetes/helm/blob/master/docs/chart_repository.md
-[cf-mode]: https://github.com/deis/steward/blob/master/doc/CF_BROKER_MODE.md
-[helm-mode]: https://github.com/deis/steward/blob/master/doc/HELM_MODE.md
-[cmd-mode]: https://github.com/deis/steward/blob/master/doc/CMD_MODE.md
+[cf-mode]: https://github.com/deisthree/steward/blob/master/doc/CF_BROKER_MODE.md
+[helm-mode]: https://github.com/deisthree/steward/blob/master/doc/HELM_MODE.md
+[cmd-mode]: https://github.com/deisthree/steward/blob/master/doc/CMD_MODE.md

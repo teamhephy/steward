@@ -27,7 +27,7 @@ func (e errDataMapMissingKey) Error() string {
 	return fmt.Sprintf("map to convert to service plan claim is missing key %s", e.key)
 }
 
-// ServicePlanClaim is the json-encodable struct that represents a service plan claim. See https://github.com/deis/steward/blob/master/DATA_STRUCTURES.md#serviceplanclaim for more detail. This struct implements fmt.Stringer
+// ServicePlanClaim is the json-encodable struct that represents a service plan claim. See https://github.com/deisthree/steward/blob/master/DATA_STRUCTURES.md#serviceplanclaim for more detail. This struct implements fmt.Stringer
 type ServicePlanClaim struct {
 	TargetName        string          `json:"target-name"`
 	ServiceID         string          `json:"service-id"`

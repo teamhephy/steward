@@ -8,10 +8,10 @@ All subsequent sections of this document assume that you have a running Kubernet
 
 Pre-requisites for Steward vary based on the mode with which steward is run. Please see the below documents according to the mode with which you wish to configure and run steward.
 
-- CloudFoundry Broker: https://github.com/deis/steward/blob/master/doc/CF_BROKER_MODE.md
-  - Note that if you're trying Steward for the first time or are hacking on Steward, the Steward team has provided a trivial Cloud Foundry [sample broker][cf-sample-broker]. See that project's [README.md](https://github.com/deis/cf-sample-broker/blob/master/README.md) for installation instructions.
-- Helm: https://github.com/deis/steward/blob/master/doc/HELM_MODE.md
-- Command: https://github.com/deis/steward/blob/master/doc/CMD_MODE.md
+- CloudFoundry Broker: https://github.com/deisthree/steward/blob/master/doc/CF_BROKER_MODE.md
+  - Note that if you're trying Steward for the first time or are hacking on Steward, the Steward team has provided a trivial Cloud Foundry [sample broker][cf-sample-broker]. See that project's [README.md](https://github.com/deisthree/cf-sample-broker/blob/master/README.md) for installation instructions.
+- Helm: https://github.com/deisthree/steward/blob/master/doc/HELM_MODE.md
+- Command: https://github.com/deisthree/steward/blob/master/doc/CMD_MODE.md
 
 ## Deploy Steward
 
@@ -56,4 +56,4 @@ $ make dev-deploy-cmd
 
 For details on Steward's pure Kubernetes-based workflow, please refer to [README.md](./README.md).
 
-[cf-sample-broker]: https://github.com/deis/cf-sample-broker
+[cf-sample-broker]: https://github.com/deisthree/cf-sample-broker
